@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.10
+    - name: Set up Python 3.6
       uses: actions/setup-python@v2
       with:
-        python-version: "3.10"
+        python-version: "3.6"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -40,4 +40,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "ci-cd-assignment"
           heroku_email: "bsse1003@iit.du.ac.bd"
-          procfile: "web: gunicorn index:app"
+          Procfile: "web: gunicorn index:app"
