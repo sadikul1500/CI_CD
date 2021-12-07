@@ -16,16 +16,16 @@ def add_route(a, b):
     }
 
 # Input can be both strings and digits
-def add(a,b):
-    if type(a) == str and not a.isdigit():
+def add(x,y):
+    if type(x) == str and not x.isdigit():
         return "Invalid Input"
 
-    if type(b) == str and not b.isdigit():
+    if type(y) == str and not y.isdigit():
         return "Invalid Input"
 
-    a = int(a)
-    b = int(b)
-    return a + b
+    x = int(x)
+    y = int(y)
+    return x + y
 
 
 if __name__ == "__main__":
